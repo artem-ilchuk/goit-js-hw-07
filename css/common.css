@@ -221,10 +221,6 @@ ul {
   color: #fff;
 }
 
-.change-color:active {
-  transform: scale(0.1);
-}
-
 /*---------------------*/
 /*----------TASK 6------*/
 .controls,
