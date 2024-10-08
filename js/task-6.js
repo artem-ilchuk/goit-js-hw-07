@@ -10,6 +10,9 @@ const destroyBtn = controls.querySelector(".delete-btn");
 const boxesContainer = document.getElementById("boxes");
 
 function createBoxes(amount) {
+
+  const boxesQubes = document.createDocumentFragment();
+  
   for (let i = 0; i < amount; i++) {
     const size = 30 + i * 10;
     const box = document.createElement("div");
@@ -18,6 +21,7 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     boxesContainer.append(box);
   }
+  boxesContainer.append(boxesQubes);
 }
 
 createBtn.addEventListener("click", () => {
